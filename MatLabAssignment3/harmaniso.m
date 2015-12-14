@@ -14,15 +14,15 @@
 % Establish parameters (so they can be easily changed)
 dm  = 3;                 % Dimensions
 m   = 1;                 % Mass of the moving particle
-k   = [10; 5; 3];        % Spring constants, kx, ky, and kz
-dt  = 0.05;              % time step
+k   = [10; 10; 10];        % Spring constants, kx, ky, and kz
+dt  = .2;              % time step
 nt  = 400;               % number of time steps
 ti  = 0.;                % Initial time
 tf  = ti + (nt-1) * dt;  % Final time
 xcen = [0; 0; 0];        % Position of center
 
 % Initial conditions (the dimensions must match dm)
-x0 = [10.; 10.; 5]; v0 = [0.4; -0.4; 0.3];
+x0 = [10.; 10.; 10]; v0 = [20; -0.4; 0];
 
 % Initiate arrays
 t = linspace(ti,tf,nt);
